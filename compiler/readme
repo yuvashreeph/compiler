@@ -1,0 +1,4 @@
+bison -d parser.y
+flex lex.l
+gcc  parser.tab.c lex.yy.c ir.c optimizer.c codegen.c -o compiler
+./compiler < input.txt
