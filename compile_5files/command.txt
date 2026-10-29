@@ -1,0 +1,5 @@
+bison -d -y parser.y / yacc -d parser.y
+flex lexer.l
+gcc -o compiler lex.yy.c y.tab.c optimizer.c codegen.c main.c -lfl
+./compiler input.txt
+Produces the executable named compiler. Note: If -lfl throws an error on your system, try -ll).
