@@ -1,0 +1,14 @@
+--- PART D: OPTIMIZED TAC (CODE MOTION) ---
+t1 = n * 4
+t3 = 16 * 5
+r = t3
+t4 = x * y
+t5 = t4 + z
+s = t5
+L1:
+t2 = m < t1
+ifFalse t2 goto L2
+t6 = m + s
+t = t6
+goto L1
+L2:
