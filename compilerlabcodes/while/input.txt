@@ -1,5 +1,0 @@
-while (i < limit * 5) {
-    x = 4 * 6;
-    y = p * q + r;
-    z = x + y;
-}
